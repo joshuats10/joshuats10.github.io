@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Noto%20Sans);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #080D2F;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar {
+    height: 60px;
+    padding-top: 20px;
+}
+
+.navbar #logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.navbar #logo a:hover {
+    color: #0FD5D5
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.nav a:hover {
+    color: #0FD5D5
+}
+
+/* navbar positioning settings */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .nav-item {
+    display: flex;
+}
+
+.nav-item li {
+    margin-left: 50px;
+}
+
+.navbar .nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Resume button settings*/
+#resume a {
+    margin-left: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+}
+
+#resume a:hover {
+    color: #0FD5D5;
+    border-color: #0FD5D5;
+}
+
+section {
+    height: 100vh;
+}
+
+/* Landing Page */
+
+#landing {
+    max-width: 1300px;
+    padding-left: 10em;
+    padding-top: 10em;
+}
+
+#landing h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#landing h3 {
+    color: #BEC2DE;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#landing p {
+    color: #A3A7C1;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.arrow-down {
+    animation: moveArrow 1s alternate infinite;
+}
+
+@keyframes moveArrow {
+    from {transform: translateY(0px);}
+    to {transform: translateY(30px);}
+}
+
+/* Socials Buttons */
+
+.socials {
+    position: fixed;
+    bottom: 20px;
+}
+
+.socials li {
+    padding: 5px 5px;
+}
+
+.socials a {
+    color: #fff;
+    display: inline-block;
+    transition-property: color, transform;
+    transition-duration: 0.3s;
+}
+
+.socials a:hover {
+    color:#0FD5D5;
+    transform: translateY(-5px);
+}
+
+#about {
+    padding-left: 10em;
+    background-color: blue;
+}
+
+#about h2 {
+    padding-left: 50px;
+    padding-top: 1em;
+    font-size: 3rem;
+}
+
+.hr {
+    margin-left:50px;
+    width: 20%;
+    border: 2px solid #fff;
+    margin-bottom: 50px;
+}
+
+#work{
+    padding-left: 10em;
+    background-color: red;
+}
+
+#work h2 {
+    padding-left: 50px;
+    padding-top: 1em;
+    font-size: 3rem;
+}
+
+#contact .container{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact h2{
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
+
+#contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+}
+
+#contact a:hover {
+    color: #0FD5D5;
+    border-color: #0FD5D5;
+}
