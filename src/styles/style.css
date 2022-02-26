@@ -23,9 +23,21 @@ ul {
     padding: 0 50px;
 }
 
+.nav-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: top 0.6s;
+    background-color: rgba(8,13,47,1);
+    z-index: 2147483647; /* to make sure it stays at the top most level */
+}
+
 .navbar {
     height: 60px;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .navbar #logo a {
@@ -66,10 +78,6 @@ ul {
     display: flex;
 }
 
-.nav-item li {
-    margin-left: 50px;
-}
-
 .navbar .nav {
     display: flex;
     align-items: center;
@@ -90,16 +98,50 @@ ul {
     border-color: #0FD5D5;
 }
 
-section {
-    height: 100vh;
+/* Landing animation settings */
+
+.logo-navitem-fadedown {
+    animation: fade 0.25s ease-in-out both;
+}
+
+.nav-item li {
+    margin-left: 50px;
+    animation: fade 0.25s ease-in-out 0.3s both;
+}
+
+.nav-item li:nth-child(2) {
+    animation-delay: 0.425s;
+}
+
+.nav-item li:nth-child(3) {
+    animation-delay: 0.55s;
+}
+
+#resume{
+    animation: fade 0.25s ease-in-out 0.675s both;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0; 
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 /* Landing Page */
 
-#landing {
-    max-width: 1300px;
-    padding-left: 10em;
-    padding-top: 10em;
+#landing .container {
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5em;
 }
 
 #landing h1 {
@@ -117,12 +159,27 @@ section {
     color: #A3A7C1;
     font-size: 1.1rem;
     font-weight: lighter;
-    padding-top: 10px;
     padding-bottom: 30px;
 }
 
+#hi {
+    animation: fade 0.25s ease-in-out 0.7s both;
+}
+
+#name {
+    animation: fade 0.25s ease-in-out 0.825s both;
+}
+
+#sub-1 {
+    animation: fade 0.25s ease-in-out 0.95s both;
+}
+
+#sub-2 {
+    animation: fade 0.25s ease-in-out 1.075s both;
+}
+
 .arrow-down {
-    animation: moveArrow 1s alternate infinite;
+    animation: fade 0.25s ease-in-out 1.2s both, moveArrow 1s alternate infinite;
 }
 
 @keyframes moveArrow {
@@ -134,11 +191,24 @@ section {
 
 .socials {
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
 }
 
 .socials li {
     padding: 5px 5px;
+    animation: fade-fromRight 0.25s ease-in-out 1.45s both;
+}
+
+.socials li:nth-child(2) {
+    animation-delay: 1.575s;
+}
+
+.socials li:nth-child(3) {
+    animation-delay: 1.7s;
+}
+
+.socials li:nth-child(4) {
+    animation-delay: 1.825s;
 }
 
 .socials a {
@@ -153,9 +223,22 @@ section {
     transform: translateY(-5px);
 }
 
+@keyframes fade-fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+/* About page settings */
+
 #about {
     padding-left: 10em;
-    background-color: blue;
+    height: 100vh;
 }
 
 #about h2 {
@@ -171,6 +254,21 @@ section {
     margin-bottom: 50px;
 }
 
+#about .container {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.profile {
+    height: 456px;
+    margin: 20px 50px;
+    padding: 10px 10px;
+    border: 1px solid;
+}
+
 #work{
     padding-left: 10em;
     background-color: red;
@@ -183,7 +281,7 @@ section {
 }
 
 #contact .container{
-    height:100vh;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,4 +309,21 @@ section {
 #contact a:hover {
     color: #0FD5D5;
     border-color: #0FD5D5;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    height: 60px;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
