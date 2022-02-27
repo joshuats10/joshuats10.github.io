@@ -25,7 +25,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="resume-fadedown" id="resume">
-                        <a href="#">Resume</a>
+                        <a href="../Resume_JoshuaTeguhSantoso.pdf">Resume</a>
                     </div>
                 </div>
             </div>
@@ -49,8 +49,8 @@
         <div class="container">
             <h3 id="hi">Hi there! My name is</h3>
             <h1 id="name">Joshua Teguh Santoso.</h1>
-            <h3 id="sub-1">Just your Information Science graduate student.</h3>
-            <p id="sub-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a doloremque, distinctio excepturi minus magnam obcaecati illo omnis corporis cumque odio nostrum ipsum id voluptatibus est dolores consequatur impedit accusantium?</p>
+            <h3 id="sub-1">An Information Sciences Graduate Student.</h3>
+            <p id="sub-2">Passionate about Software Engineering, Data Science and Transportation Scieneces.</p>
             <a href="#about"><svg width="24" height="152" viewBox="0 0 24 152" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-down">
                 <path d="M10.9394 151.061C11.5251 151.646 12.4749 151.646 13.0607 151.061L22.6066 141.515C23.1924 140.929 23.1924 139.979 22.6066 139.393C22.0208 138.808 21.0711 138.808 20.4853 139.393L12 147.879L3.51473 139.393C2.92894 138.808 1.9792 138.808 1.39341 139.393C0.807624 139.979 0.807624 140.929 1.39341 141.515L10.9394 151.061ZM10.5 1.31134e-07L10.5 150L13.5 150L13.5 -1.31134e-07L10.5 1.31134e-07Z" fill="white"/>
                 </svg></a>
@@ -58,36 +58,80 @@
     </section>
 
     <!-- About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <hr class="hr"> 
+    <section class="scroll-container" id="about">
         <div class="container">
-            <img src="../images/profile.png" alt="My pic">
-            <div class="profile">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Delectus a consectetur fugit ullam aperiam excepturi nisi repellat, labore at. <br>
-                    Veniam, neque fugit inventore maiores doloribus facilis, quia nemo quidem reprehenderit a deserunt? <br>
-                    Consectetur labore alias quas aliquid. Tempora voluptatem recusandae nemo delectus, <br>
-                    reprehenderit voluptate excepturi error ex expedita quo magni.
-                </p>
+            <h2>About Me</h2>
+            <hr class="hr"> 
+            <div class="aboutme-container">
+                <img src="../images/profile.png" alt="My pic">
+                <div class="profile">
+                    <p>
+                        Hello! My name is Joshua Teguh Santoso. 👋
+                        <br>
+                        <br>
+                        My interest in software development started back in 2018 after a class called 'Computer Seminar I'. No, we're not talking all about computers here. 
+                        Through this class, I've been exposed to programming, software development, and cool technologies where I would like to create something cool and advanced that benefits the society in the future.
+                        <br>
+                        <br>
+                        And today, I am attending graduate school in information sciences with expected graduation in March 2024. Currently, I am researching about the effect of Mobility-as-a-Service platform on transportation network through simulation.  
+                        <br>
+                        <br>
+                        Here are some technologies I've been working on recently:
+                        <br>          
+                    </p>
+                    <div class="list_tech">
+                        <ul class="tech">
+                            <li>Python</li>
+                            <li>MATSim</li>
+                        </ul>
+                        <ul class="tech">
+                            <li>Java</li>
+                            <li>JavaScript (ES6)</li>
+                        </ul>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Work -->
     <section id="work">
-        <h2>Featured Projects</h2>
-        <hr class="hr">
         <div class="container">
-            <div class="project">
-
-            </div>
-            <div class="project">
-                
-            </div>
-            <div class="project">
-                
+            <h2>Featured Projects</h2>
+            <hr class="hr">
+            <div class="work-container">
+                <div class="project">
+                    <img src="https://media.giphy.com/media/TKSc3wTvbGZ6MKdv4z/giphy.gif" alt="carNavSys" height="456px">
+                    <div class="content">
+                        <h3>Car Navigation System</h3>
+                        <p>
+                            GUI-based car navigation system by using <span class="prog-lang">OpenGL</span> framework on top of <span class="prog-lang">C</span> language.
+                        </p>
+                        <a href="https://github.com/joshuats10/CarNavigationSystem" class="learnmore">Learn more</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="content">
+                        <h3>Finding Waldo</h3>
+                        <p>
+                            Created and trained Haar Cascade object detection to find Waldo from 'Where's Waldo' series by using <span class="prog-lang">OpenCV</span> on top of <span class="prog-lang">Python</span>.
+                        </p>
+                        <a href="https://github.com/joshuats10/FindingWaldo">Learn more</a>
+                    </div>
+                    <img src="../images/waldo.jpg" alt="waldo">
+                </div>
+                <div class="project">
+                    <img src="../images/graph-SiouxFalls.jpg" alt="SiouxFalls" height="456px">
+                    <div class="content">
+                        <h3>Visualisation of User Equilibrium</h3>
+                        <p>
+                            Built an user equilibrium traffic assignment solver along with its visualiser using <span class="prog-lang">Python</span> with <span class="prog-lang">NetworkX</span>library package.
+                        </p>
+                        <a href="https://github.com/joshuats10/UserEquilibrium">Learn more</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -96,6 +140,9 @@
     <section id="contact">
         <div class="container">
             <h2>Let's Get In Touch</h2>
+            <p>
+                Currently I'm looking for both short-term or long-term internship opportunities. If you're interested in hiring me or just want to say hi, just give me a mail! 😊
+            </p>
             <a href="mailto:joshuateguhsantoso@gmail.com">Say Hello 👋</a>
         </div>
     </section>

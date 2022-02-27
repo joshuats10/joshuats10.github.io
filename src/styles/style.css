@@ -30,14 +30,14 @@ ul {
     width: 100%;
     box-sizing: border-box;
     transition: top 0.6s;
-    background-color: rgba(8,13,47,1);
+    background-color: #080D2F;
     z-index: 2147483647; /* to make sure it stays at the top most level */
 }
 
 .navbar {
     height: 60px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .navbar #logo a {
@@ -236,52 +236,124 @@ ul {
 
 /* About page settings */
 
-#about {
-    padding-left: 10em;
-    height: 100vh;
-}
-
 #about h2 {
-    padding-left: 50px;
-    padding-top: 1em;
     font-size: 3rem;
 }
 
 .hr {
-    margin-left:50px;
     width: 20%;
     border: 2px solid #fff;
-    margin-bottom: 50px;
 }
 
-#about .container {
+#about .container{
     max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#about .aboutme-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
+.list_tech {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.tech {
+    list-style-type: disc;
+}
+
 .profile {
     height: 456px;
     margin: 20px 50px;
-    padding: 10px 10px;
-    border: 1px solid;
+    padding: 0px 10px;
 }
 
-#work{
-    padding-left: 10em;
-    background-color: red;
+.profile p {
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+#work .container{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 #work h2 {
-    padding-left: 50px;
-    padding-top: 1em;
     font-size: 3rem;
 }
 
+#work .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#work .project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#work .content {
+    height: 456px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 50px;
+    padding: 0px 10px;
+}
+
+.content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#work a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+}
+
+#work a:hover {
+    color: #0FD5D5;
+    border-color: #0FD5D5;
+}
+
+.prog-lang {
+    color: #0FD5D5;
+    font-weight: bold;
+}
+
 #contact .container{
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,6 +363,11 @@ ul {
 
 #contact h2{
     font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#contact p{
+    width: 600px;
     padding-bottom: 50px;
 }
 

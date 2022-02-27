@@ -23,7 +23,7 @@ window.addEventListener('scroll', function(){
         navbar.style.top = '0';
     } 
     else {
-        navbar.style.top = '-60px';
+        navbar.style.top = '-80px';
     }
 
     prevScrollPos = currentScrollPos;
