@@ -141,7 +141,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-top: 5em;
+    margin-top: -60px;
+    padding-top: 17.5em;
 }
 
 #landing h1 {
@@ -180,6 +181,7 @@ ul {
 
 .arrow-down {
     animation: fade 0.25s ease-in-out 1.2s both, moveArrow 1s alternate infinite;
+    width: 1.5em;
 }
 
 @keyframes moveArrow {
