@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my first iteration of my own personal [webstite/portfolio](joshuateguhsantoso.dev) .\
+This is my first iteration of my own personal [webstite/portfolio](https://joshuateguhsantoso.dev) .\
 Written in HTML, CSS and JavaScript.
 
 ## Future Updates
