@@ -31,7 +31,7 @@ ul {
     box-sizing: border-box;
     transition: top 0.6s;
     background-color: #080D2F;
-    z-index: 2147483647; /* to make sure it stays at the top most level */
+    z-index: 2147483646; /* to make sure it stays at the top most level */
 }
 
 .navbar {
@@ -54,16 +54,19 @@ ul {
 }
 
 .nav a {
-    color: #fff;
+    color: #080D2F;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     transition-property: color;
     transition-duration: 0.3s;
+    padding: .75em 2em;
+    display: block;
 }
 
 .nav a:hover {
-    color: #0FD5D5
+    color: #0FD5D5;
+    background: rgb(240, 240, 240);
 }
 
 /* navbar positioning settings */
@@ -74,61 +77,202 @@ ul {
     height: 100%;
 }
 
-.navbar .nav-item {
-    display: flex;
+.nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 2147483647;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
 }
 
-.navbar .nav {
-    display: flex;
-    align-items: center;
+.nav-item {
+    margin-top: 8em;
+    padding: 0;
 }
 
-/* Resume button settings*/
-#resume a {
-    margin-left: 50px;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 5px 10px;
-    transition-property: color, border-color;
+.nav-item a {
+    padding: .75em 2em;
+    display: block;
+}
+
+.close {
+    color: #080D2F;
+    float: right;
+    margin: 40px;
+    width: 2em;
+}
+
+.menu {
+    width: 2em;
+}
+
+.open-nav {
+    transform: translateX(0);
+}
+
+.socialsFooter a {
+    color: #fff;
+    transition-property: color, transform;
     transition-duration: 0.3s;
 }
 
-#resume a:hover {
-    color: #0FD5D5;
-    border-color: #0FD5D5;
+.socialsFooter a:hover {
+    color:#0FD5D5;
+    transform: translateY(-5px);
 }
 
-/* Landing animation settings */
-
-.logo-navitem-fadedown {
-    animation: fade 0.25s ease-in-out both;
+.socialsFooter li {
+    padding: 5px 5px;
+    display: inline-block;
 }
 
-.nav-item li {
-    margin-left: 50px;
-    animation: fade 0.25s ease-in-out 0.3s both;
+.socials {
+    display: none;
 }
 
-.nav-item li:nth-child(2) {
-    animation-delay: 0.425s;
-}
-
-.nav-item li:nth-child(3) {
-    animation-delay: 0.55s;
-}
-
-#resume{
-    animation: fade 0.25s ease-in-out 0.675s both;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0; 
-        transform: translateY(-20px);
+@media only screen and (min-width: 920px) {
+    .menu {
+        display: none;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
+    
+    .navbar .nav-item {
+        display: flex;
+    }
+
+    .nav {
+        transform: translateX(0);
+        position: unset;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    
+    .navbar .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .nav a:hover {
+        background: none;
+    }
+    
+    .nav-item {
+        margin-top: 0;
+    }
+    
+    .nav-item a {
+        padding: 0;
+        display: unset;
+    }
+
+    /* Resume button settings*/
+    #resume a {
+        margin-left: 50px;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition-property: color, border-color;
+        transition-duration: 0.3s;
+    }
+
+    #resume a:hover {
+        color: #0FD5D5;
+        border-color: #0FD5D5;
+    }
+
+    /* Landing animation settings */
+
+    .logo-navitem-fadedown {
+        animation: fade 0.25s ease-in-out both;
+    }
+
+    .nav-item li {
+        margin-left: 50px;
+        animation: fade 0.25s ease-in-out 0.3s both;
+    }
+
+    .nav-item li:nth-child(2) {
+        animation-delay: 0.425s;
+    }
+
+    .nav-item li:nth-child(3) {
+        animation-delay: 0.55s;
+    }
+
+    #resume{
+        animation: fade 0.25s ease-in-out 0.675s both;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0; 
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .socialsFooter {
+        display: none;
+    }
+
+    /* Socials Buttons */
+
+    .socials {
+        position: fixed;
+        bottom: 60px;
+        display: block;
+    }
+
+    .socials li {
+        padding: 5px 5px;
+        animation: fade-fromRight 0.25s ease-in-out 1.45s both;
+    }
+
+    .socials li:nth-child(2) {
+        animation-delay: 1.575s;
+    }
+
+    .socials li:nth-child(3) {
+        animation-delay: 1.7s;
+    }
+
+    .socials li:nth-child(4) {
+        animation-delay: 1.825s;
+    }
+
+    .socials a {
+        color: #fff;
+        display: inline-block;
+        transition-property: color, transform;
+        transition-duration: 0.3s;
+    }
+
+    .socials a:hover {
+        color:#0FD5D5;
+        transform: translateY(-5px);
+    }
+
+    @keyframes fade-fromRight {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px)
+        }
     }
 }
 
@@ -187,53 +331,6 @@ ul {
 @keyframes moveArrow {
     from {transform: translateY(0px);}
     to {transform: translateY(30px);}
-}
-
-/* Socials Buttons */
-
-.socials {
-    position: fixed;
-    bottom: 60px;
-}
-
-.socials li {
-    padding: 5px 5px;
-    animation: fade-fromRight 0.25s ease-in-out 1.45s both;
-}
-
-.socials li:nth-child(2) {
-    animation-delay: 1.575s;
-}
-
-.socials li:nth-child(3) {
-    animation-delay: 1.7s;
-}
-
-.socials li:nth-child(4) {
-    animation-delay: 1.825s;
-}
-
-.socials a {
-    color: #fff;
-    display: inline-block;
-    transition-property: color, transform;
-    transition-duration: 0.3s;
-}
-
-.socials a:hover {
-    color:#0FD5D5;
-    transform: translateY(-5px);
-}
-
-@keyframes fade-fromRight {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px)
-    }
 }
 
 /* About page settings */

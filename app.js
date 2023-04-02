@@ -1,5 +1,17 @@
 feather.replace()
 
+const menu = document.querySelector('.menu')
+const close = document.querySelector('.close')
+const nav = document.querySelector('.nav')
+
+menu.addEventListener('click', () => {
+    nav.classList.add('open-nav')
+})
+
+close.addEventListener('click', () => {
+    nav.classList.remove('open-nav')
+})
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
