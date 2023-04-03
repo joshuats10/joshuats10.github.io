@@ -134,148 +134,6 @@ ul {
     display: none;
 }
 
-@media only screen and (min-width: 920px) {
-    .menu {
-        display: none;
-    }
-    
-    .navbar .nav-item {
-        display: flex;
-    }
-
-    .nav {
-        transform: translateX(0);
-        position: unset;
-        width: auto;
-        height: auto;
-        background: none;
-    }
-    
-    .navbar .nav {
-        display: flex;
-        align-items: center;
-    }
-
-    .nav a {
-        color: #fff;
-        font-size: 18px;
-    }
-
-    .nav a:hover {
-        background: none;
-    }
-    
-    .nav-item {
-        margin-top: 0;
-    }
-    
-    .nav-item a {
-        padding: 0;
-        display: unset;
-    }
-
-    /* Resume button settings*/
-    #resume a {
-        margin-left: 50px;
-        border: 1px solid;
-        border-radius: 5px;
-        padding: 5px 10px;
-        transition-property: color, border-color;
-        transition-duration: 0.3s;
-    }
-
-    #resume a:hover {
-        color: #0FD5D5;
-        border-color: #0FD5D5;
-    }
-
-    /* Landing animation settings */
-
-    .logo-navitem-fadedown {
-        animation: fade 0.25s ease-in-out both;
-    }
-
-    .nav-item li {
-        margin-left: 50px;
-        animation: fade 0.25s ease-in-out 0.3s both;
-    }
-
-    .nav-item li:nth-child(2) {
-        animation-delay: 0.425s;
-    }
-
-    .nav-item li:nth-child(3) {
-        animation-delay: 0.55s;
-    }
-
-    #resume{
-        animation: fade 0.25s ease-in-out 0.675s both;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: 0; 
-            transform: translateY(-20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-
-    .socialsFooter {
-        display: none;
-    }
-
-    /* Socials Buttons */
-
-    .socials {
-        position: fixed;
-        bottom: 60px;
-        display: block;
-    }
-
-    .socials li {
-        padding: 5px 5px;
-        animation: fade-fromRight 0.25s ease-in-out 1.45s both;
-    }
-
-    .socials li:nth-child(2) {
-        animation-delay: 1.575s;
-    }
-
-    .socials li:nth-child(3) {
-        animation-delay: 1.7s;
-    }
-
-    .socials li:nth-child(4) {
-        animation-delay: 1.825s;
-    }
-
-    .socials a {
-        color: #fff;
-        display: inline-block;
-        transition-property: color, transform;
-        transition-duration: 0.3s;
-    }
-
-    .socials a:hover {
-        color:#0FD5D5;
-        transform: translateY(-5px);
-    }
-
-    @keyframes fade-fromRight {
-        from {
-            opacity: 0;
-            transform: translateX(-30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px)
-        }
-    }
-}
-
 /* Landing Page */
 
 #landing .container {
@@ -285,26 +143,25 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-top: -60px;
-    padding-top: 17.5em;
+    margin-top: 80px;
 }
 
 #landing h1 {
-    font-size: 5rem;
+    font-size: 3em;
     font-weight: bold;
 }
 
 #landing h3 {
     color: #BEC2DE;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: normal;
 }
 
 #landing p {
     color: #A3A7C1;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: lighter;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #hi {
@@ -502,4 +359,163 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (min-width: 680px) {
+    
+    #landing h1 {
+        font-size: 4em;
+    }
+
+}
+
+@media only screen and (min-width: 920px) {
+    .menu {
+        display: none;
+    }
+    
+    .navbar .nav-item {
+        display: flex;
+    }
+
+    .nav {
+        transform: translateX(0);
+        position: unset;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    
+    .navbar .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .nav a:hover {
+        background: none;
+    }
+    
+    .nav-item {
+        margin-top: 0;
+    }
+    
+    .nav-item a {
+        padding: 0;
+        display: unset;
+    }
+
+    /* Resume button settings*/
+    #resume a {
+        margin-left: 50px;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition-property: color, border-color;
+        transition-duration: 0.3s;
+    }
+
+    #resume a:hover {
+        color: #0FD5D5;
+        border-color: #0FD5D5;
+    }
+
+    /* Landing animation settings */
+
+    .logo-navitem-fadedown {
+        animation: fade 0.25s ease-in-out both;
+    }
+
+    .nav-item li {
+        margin-left: 50px;
+        animation: fade 0.25s ease-in-out 0.3s both;
+    }
+
+    .nav-item li:nth-child(2) {
+        animation-delay: 0.425s;
+    }
+
+    .nav-item li:nth-child(3) {
+        animation-delay: 0.55s;
+    }
+
+    #resume{
+        animation: fade 0.25s ease-in-out 0.675s both;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0; 
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .socialsFooter {
+        display: none;
+    }
+
+    /* Socials Buttons */
+
+    .socials {
+        position: fixed;
+        bottom: 60px;
+        display: block;
+    }
+
+    .socials li {
+        padding: 5px 5px;
+        animation: fade-fromRight 0.25s ease-in-out 1.45s both;
+    }
+
+    .socials li:nth-child(2) {
+        animation-delay: 1.575s;
+    }
+
+    .socials li:nth-child(3) {
+        animation-delay: 1.7s;
+    }
+
+    .socials li:nth-child(4) {
+        animation-delay: 1.825s;
+    }
+
+    .socials a {
+        color: #fff;
+        display: inline-block;
+        transition-property: color, transform;
+        transition-duration: 0.3s;
+    }
+
+    .socials a:hover {
+        color:#0FD5D5;
+        transform: translateY(-5px);
+    }
+
+    @keyframes fade-fromRight {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px)
+        }
+    }
+
+    #landing .container {
+        margin-left: 134px;
+    }
+
+    #landing h1 {
+        font-size: 5em;
+    }
+
 }
