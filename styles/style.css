@@ -203,7 +203,7 @@ ul {
 
 #about .container{
     max-width: 1100px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,8 +213,9 @@ ul {
 #about .aboutme-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
-    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .list_tech {
@@ -228,13 +229,11 @@ ul {
 }
 
 .profile {
-    height: 456px;
-    margin: 20px 50px;
-    padding: 0px 10px;
+    margin: 20px 0;
 }
 
 .profile p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: lighter;
 }
 
@@ -365,6 +364,20 @@ ul {
     
     #landing h1 {
         font-size: 4em;
+    }
+
+    #about .aboutme-container {
+        flex-direction: row;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+
+    #about .aboutme-container img {
+        margin: 20px 0;
+    }
+
+    .profile {
+        padding-left: 30px;
     }
 
 }
@@ -515,7 +528,11 @@ ul {
     }
 
     #landing h1 {
-        font-size: 5em;
+        font-size: 4.5em;
+    }
+
+    #about .container{
+        margin-left: 134px;
     }
 
 }
