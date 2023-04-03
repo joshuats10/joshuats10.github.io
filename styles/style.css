@@ -558,20 +558,22 @@ ul {
         }
     }
 
-    #landing .container {
-        margin-left: 134px;
+    #landing .container, #about .container, #work .container {
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
     #landing h1 {
         font-size: 4.5em;
     }
 
-    #about .container{
-        margin-left: 134px;
-    }
+}
 
-    #work .container{
-        margin-left: 134px;
+@media only screen and (min-width: 1315px) {
+
+    #landing .container, #about .container, #work .container {
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
