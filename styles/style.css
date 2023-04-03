@@ -193,7 +193,7 @@ ul {
 /* About page settings */
 
 #about h2 {
-    font-size: 3rem;
+    font-size: 2.75em;
 }
 
 .hr {
@@ -246,7 +246,7 @@ ul {
 }
 
 #work h2 {
-    font-size: 3rem;
+    font-size: 2.75em;
 }
 
 #work .work-container {
@@ -256,21 +256,40 @@ ul {
 }
 
 #work .project {
-    width: 100%;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.work-img {
+    display: none;
+}
+
+#ue {
+    background-image: url('../images/graph-SiouxFalls.jpg');
+    background-size: cover;
+}
+
+#car-navi {
+    background-image: url(https://media.giphy.com/media/TKSc3wTvbGZ6MKdv4z/giphy.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+#waldo {
+    background-image: url('../images/waldo.jpg');
+    background-size: cover;
 }
 
 #work .content {
-    height: 456px;
-    width: 500px;
+    max-height: 456px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 50px;
-    padding: 0px 10px;
+    padding: 20px 60px;
+    backdrop-filter: blur(5px) brightness(0.5);
 }
 
 .content h3 {
@@ -308,7 +327,7 @@ ul {
 }
 
 #contact .container{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,12 +336,12 @@ ul {
 }
 
 #contact h2{
-    font-size: 3rem;
+    font-size: 2.5em;
     padding-bottom: 10px;
 }
 
 #contact p{
-    width: 600px;
+    max-width: 600px;
     padding-bottom: 50px;
 }
 
@@ -380,6 +399,20 @@ ul {
         padding-left: 30px;
     }
 
+    .work-img {
+        display: block;
+        max-height: 456px;
+        max-width: 40%;
+    }
+
+    #work .content {
+        max-width: 60%;
+        backdrop-filter: none;
+    }
+
+    #ue, #waldo, #car-navi {
+        background-image: none;
+    }
 }
 
 @media only screen and (min-width: 920px) {
@@ -532,6 +565,10 @@ ul {
     }
 
     #about .container{
+        margin-left: 134px;
+    }
+
+    #work .container{
         margin-left: 134px;
     }
 
