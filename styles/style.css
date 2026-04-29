@@ -381,7 +381,7 @@ ul {
 }
 
 @media only screen and (min-width: 680px) {
-    
+
     #landing h1 {
         font-size: 4em;
     }
@@ -421,7 +421,7 @@ ul {
     .menu {
         display: none;
     }
-    
+
     .navbar .nav-item {
         display: flex;
     }
@@ -433,7 +433,7 @@ ul {
         height: auto;
         background: none;
     }
-    
+
     .navbar .nav {
         display: flex;
         align-items: center;
@@ -447,11 +447,11 @@ ul {
     .nav a:hover {
         background: none;
     }
-    
+
     .nav-item {
         margin-top: 0;
     }
-    
+
     .nav-item a {
         padding: 0;
         display: unset;
