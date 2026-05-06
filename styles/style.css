@@ -155,7 +155,6 @@ ul {
     color: #BEC2DE;
     font-size: 1.5em;
     font-weight: normal;
-    padding-bottom: 20px;
 }
 
 #landing p {
@@ -167,6 +166,7 @@ ul {
 
 #hi {
     animation: fade 0.25s ease-in-out 0.7s both;
+    margin-bottom: -15px;
 }
 
 #name {
@@ -175,6 +175,7 @@ ul {
 
 #sub-1 {
     animation: fade 0.25s ease-in-out 0.95s both;
+    margin-bottom: 20px;
 }
 
 #sub-2 {
